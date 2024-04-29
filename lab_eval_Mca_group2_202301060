@@ -1,0 +1,115 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNlJ2r45wDQpK4wuuUX6Mgj",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Shivanikumari0809/Shivani_BigData/blob/main/lab_eval_Mca_group2_202301060\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 19,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YoRPFx3jWTte",
+        "outputId": "b1d713c9-8eef-445d-9010-a199563f3195"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([ 10,  16,  16,  52,  54,  62, 453])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "array = np.array([10,52,62,16,16,54,453])\n",
+        "np.sort(array)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr2=np.argsort(array)"
+      ],
+      "metadata": {
+        "id": "yH-l-H3uY881"
+      },
+      "execution_count": 22,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(arr2[0:4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "STKHf-23Y_bn",
+        "outputId": "9f125552-c458-482f-8c5f-efec15ea995b"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0 3 4 1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(arr2[2:])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MHsBgNRzbGJw",
+        "outputId": "287c6402-a0d4-4caf-f13b-922f627d5e0e"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[4 1 5 2 6]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
